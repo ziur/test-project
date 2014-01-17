@@ -18,7 +18,7 @@ describe("Player", function() {
     //demonstrates use of custom matcher
 //    expect(player).toBePlaying(song);
     expect(1).toBe(1);
-    expect(2).toBe(2);
+    expect(21).toBe(2);
   });
 /*
   xdescribe("when song has been paused", function() {
