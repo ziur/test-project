@@ -1,3 +1,4 @@
+
 var Player = require("../src/Player");
 var Song = require("../src/Song");
 
@@ -16,9 +17,10 @@ describe("Player", function() {
 
     //demonstrates use of custom matcher
     expect(player).toBePlaying(song);
+    expect(1).toBe(1);
   });
 
-  describe("when song has been paused", function() {
+  xdescribe("when song has been paused", function() {
     beforeEach(function() {
       player.play(song);
       player.pause();
@@ -39,7 +41,7 @@ describe("Player", function() {
   });
 
   // demonstrates use of spies to intercept and test method calls
-  it("tells the current song if the user has made it a favorite", function() {
+  xit("tells the current song if the user has made it a favorite", function() {
     spyOn(song, 'persistFavoriteStatus');
 
     player.play(song);
@@ -49,7 +51,7 @@ describe("Player", function() {
   });
 
   //demonstrates use of expected exceptions
-  describe("#resume", function() {
+  xdescribe("#resume", function() {
     it("should throw an exception if song is already playing", function() {
       player.play(song);
 
