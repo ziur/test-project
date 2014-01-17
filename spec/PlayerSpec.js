@@ -1,3 +1,6 @@
+var Player = require("../src/Player");
+var Song = require("../src/Song");
+
 describe("Player", function() {
   var player;
   var song;
@@ -52,7 +55,7 @@ describe("Player", function() {
 
       expect(function() {
         player.resume();
-      }).toThrow("song is already playing");
+      }).toThrow("song is already playing1");
     });
   });
 });
