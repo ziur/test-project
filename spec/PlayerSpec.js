@@ -19,7 +19,7 @@ describe("Player", function() {
     expect(player).toBePlaying(song);
     expect(1).toBe(1);
   });
-
+/*
   xdescribe("when song has been paused", function() {
     beforeEach(function() {
       player.play(song);
@@ -60,6 +60,7 @@ describe("Player", function() {
       }).toThrow("song is already playing1");
     });
   });
+*/
 });
 
 
